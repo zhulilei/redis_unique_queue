@@ -15,6 +15,18 @@ Push(q string, body string, pri int) (int, error)
 Pop(q string) (resp string, err error)
 ```
 
+UniqueQueue
+
+```
+NewUniqueQueue(r *redis.Pool) *UniqueQueue
+
+UniquePush(q string, body string) (int, error)
+
+UniquePop(q string) (resp string, err error)
+
+more..
+```
+
 `to do:`
 
 * 加入批量操作
